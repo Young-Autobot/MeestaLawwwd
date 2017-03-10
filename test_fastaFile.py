@@ -1,4 +1,4 @@
-# unittest and os was imported for Testing.
+# Necessary libraries were imported.
 import unittest
 import os
 

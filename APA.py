@@ -51,37 +51,7 @@ class FastaFile(object):
 
     #Function created to look up input (ID) in the dictionary.
     #It then prints the sequence for associated ID.
-    def user_input(self):
-        #Loop was made and looped until told to stop.
-        while True:
-            # Command variable asked user for an input.
-            # Command variable was the raw input user had typed.
-            command = raw_input("Please provide sequence"
-                " identification number (e.g. XXXXXXXX) "
-                                "or type 'exit' to close: ")
 
-            # If user typed exit 'command' stopped asking for input.
-            if command.lower() == "exit":
-                # A print statement appeared confirming 'exit'.
-                 print "Farewell dear user. " \
-                       "I hope that we will meet again someday soon."
-                 break
-
-            # If input did not match keys it asked for input again.
-            if command not in self._map.keys():
-                # An error message was printed if key was not valid.
-                # Command variable was used to ask for input again.
-                print "ERROR: '%s' is not a sequence" \
-                       " identification number in the dictionary. " \
-                       "Try again." % \
-                command
-
-            # If input was valid it searched for keys in dictionary.
-            else:
-
-                value = self.__getitem__(command)
-                # Sequence ID and then sequence were printed.
-                print "%s: %s" % (command, value)
 
 
 # A GenBank file was downloaded and set as variable 'genbank_file'.
