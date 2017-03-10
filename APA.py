@@ -5,8 +5,6 @@
 from Bio import SeqIO
 # Groupby was imported from itertools for class FastaFile.
 from itertools import groupby
-# unittest was imported to for class Testing.
-import unittest
 # Both NCBIXML, and NCBIWWW were used for BLAST.
 from Bio.Blast import NCBIXML
 from Bio.Blast import NCBIWWW

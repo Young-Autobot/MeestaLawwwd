@@ -1,16 +1,11 @@
-from unittest import TestCase
+# unittest and os was imported for Testing.
+import unittest
+import os
 
-
+# class was created for testing if file exists
 class TestFastaFile(TestCase):
-    def test___init__(self):
-        self.fail()
-
-
-class TestFastaFile(TestCase):
-    def test___fasta_iter(self):
-        self.fail()
-
-
-class TestFastaFile(TestCase):
-    def test_user_input(self):
-        self.fail()
+    def filetest(self):
+        file = "/home/mika/AdvancedProgramming/Obs.fasta"
+        self.assertTrue(os.path.isfile(file))
+    if __name__ == '__main__':
+        unittest.main()
