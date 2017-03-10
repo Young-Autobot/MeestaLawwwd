@@ -3,7 +3,7 @@ import unittest
 import os
 
 # class was created for testing if file exists
-class TestFastaFile(TestCase):
+class TestFastaFile(unittest.TestCase):
     def test_file(self):
         file = "/home/mika/AdvancedProgramming/Obs.fasta"
         self.assertTrue(os.path.isfile(file))
